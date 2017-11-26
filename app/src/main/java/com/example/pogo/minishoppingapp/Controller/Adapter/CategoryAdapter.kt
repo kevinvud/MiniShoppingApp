@@ -15,10 +15,7 @@ import org.w3c.dom.Text
 /**
  * Created by pogo on 11/26/17.
  */
-class CategoryAdapter(context: Context, categories: List<Category>): BaseAdapter() {
-
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>): BaseAdapter() {
 
 
     override fun getItem(position: Int): Any {
